@@ -14,6 +14,7 @@ a, body {
 .side-bar {
   float: left;
   width: 20%;
+  position: fixed; /*  窗口固定 */
 }
 
 .side-bar > * {
@@ -54,7 +55,7 @@ a, body {
   margin-bottom: 10px;
 }
 
-.article-list {
+.article-list, .article {
   margin-right: 30%;
   background: #fff;
   padding: 20px 30px;
@@ -66,17 +67,20 @@ a, body {
   margin-bottom: 25px;
 }
 
-.article-list .item .title {
+.article-list .item .title,
+.article .title  {
   font-size: 22px;
   font-weight: 700;
   color: #454545;
 }
 
-.article-list .item .status {
+.article-list .item .status,
+.article .status {
   font-size: 13px;
   color: #ccc;
 }
 
-.article-list .item > *{
+.article-list .item > * ,
+.article .item > * {
   margin: 10px 0;
 }
